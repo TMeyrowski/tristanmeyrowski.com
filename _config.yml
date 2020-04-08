@@ -1,7 +1,7 @@
 lsi: false
 safe: true
-#source: "https://github.com/TMeyrowski/tristanmeyrowski.com.git"
-source: "/Users/tmeyrowski/Documents/workspace/tristanmeyrowski.com/"
+source: "https://github.com/TMeyrowski/tristanmeyrowski.com.git"
+#source: "/Users/tmeyrowski/Documents/workspace/tristanmeyrowski.com/"
 incremental: false
 highlighter: rouge
 gist:
