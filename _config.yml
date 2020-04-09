@@ -2,6 +2,7 @@ lsi: false
 safe: true
 #source: "https://github.com/TMeyrowski/tristanmeyrowski.com.git"
 source: "/Users/tmeyrowski/Documents/workspace/tristanmeyrowski.com/"
+#baseurl: "https://tristanmeyrowski.com"
 incremental: false
 highlighter: rouge
 gist:
@@ -17,6 +18,11 @@ sass:
 defaults:
   - scope:
       path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
     values:
       layout: "default"
 
@@ -25,3 +31,8 @@ plugins:
   - jekyll-seo-tag
 
 github: [metadata]
+
+collections:
+  projects:
+    output: true
+
