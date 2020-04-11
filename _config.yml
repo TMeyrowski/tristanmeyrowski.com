@@ -1,8 +1,5 @@
 lsi: false
 safe: true
-#source: "https://github.com/TMeyrowski/tristanmeyrowski.com.git"
-source: "/Users/tmeyrowski/Documents/workspace/tristanmeyrowski.com/"
-#baseurl: "https://tristanmeyrowski.com"
 incremental: false
 highlighter: rouge
 gist:
@@ -36,3 +33,13 @@ collections:
   projects:
     output: true
 
+title: Tristan Meyrowski | Web Developer 
+description: >
+  I'm a Freelance Web Developer based in Lille, France. Take a look at my resume and my works. 
+#source: "https://github.com/TMeyrowski/tristanmeyrowski.com.git"
+source: "/Users/tmeyrowski/Documents/workspace/tristanmeyrowski.com/"
+
+readme_index:
+  enabled:          false
+  remove_originals: false
+  with_frontmatter: false
