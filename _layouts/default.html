@@ -3,12 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap&family=Railway" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
     {% seo %}
+    <script src="https://kit.fontawesome.com/198043f82f.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    {% include navigation.html %}
+    <header>
+      {% include navigation.html %}
+    </header>
     {{ content }}
   </body>
 </html>
