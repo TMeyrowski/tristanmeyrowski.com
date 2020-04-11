@@ -1,14 +1,11 @@
-@import 'base/base';
 @import 'base/variables';
+
+@import 'base/base';
 @import 'base/functions';
 @import 'base/mixins';
 
-@import 'components/navbar';
-@import 'components/skills';
+@import 'modules/navbar';
+@import 'modules/skills';
 
 @import 'layouts/header';
-
-@import 'pages/cv';
-@import 'pages/home';
-@import 'pages/portfolio';
-@import 'pages/project';
+@import 'layouts/section-home';

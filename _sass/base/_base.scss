@@ -1,3 +1,14 @@
+*{
+    font-family: 'Railway', sans-serif;
+}
+
 h1{
     font-family: 'Quicksand', sans-serif;
+}
+
+a{
+    &:hover{
+        text-decoration: none;
+        color: $red;
+    }
 }
