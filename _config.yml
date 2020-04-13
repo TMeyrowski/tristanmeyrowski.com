@@ -1,7 +1,10 @@
 lsi: false
 safe: true
+<<<<<<< HEAD
 source: "https://github.com/TMeyrowski/tristanmeyrowski.com.git"
 #source: "/Users/tmeyrowski/Documents/workspace/tristanmeyrowski.com/"
+=======
+>>>>>>> dev
 incremental: false
 highlighter: rouge
 gist:
@@ -17,11 +20,27 @@ sass:
 defaults:
   - scope:
       path: ""
+      type: "projects"
     values:
-      layout: "default"
+      layout: "project"
 
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
 github: [metadata]
+
+collections:
+  projects:
+    output: true
+
+title: Tristan Meyrowski | Web Developer 
+description: >
+  I'm a Freelance Web Developer based in Lille, France. Take a look at my resume and my works. 
+#source: "https://github.com/TMeyrowski/tristanmeyrowski.com.git"
+source: "/Users/tmeyrowski/Documents/workspace/tristanmeyrowski.com/"
+
+readme_index:
+  enabled:          false
+  remove_originals: false
+  with_frontmatter: false

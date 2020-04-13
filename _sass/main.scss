@@ -1,3 +1,11 @@
-.current {
-    color: green;
-}
+@import 'base/variables';
+
+@import 'base/base';
+@import 'base/functions';
+@import 'base/mixins';
+
+@import 'modules/navbar';
+@import 'modules/skills';
+
+@import 'layouts/header';
+@import 'layouts/section-home';

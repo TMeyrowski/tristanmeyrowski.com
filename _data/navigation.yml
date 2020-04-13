@@ -1,4 +1,6 @@
 - name: Home
   link: /
-- name: About
-  link: /about.html
+- name: Curriculum Vitae
+  link: /#curriculum_vitae
+- name: Portfolio
+  link: /#portfolio
