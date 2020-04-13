@@ -1,6 +1,6 @@
 - name: Home
   link: /
 - name: Curriculum Vitae
-  link: /curriculum_vitae
+  link: /#curriculum_vitae
 - name: Portfolio
-  link: /portfolio
+  link: /#portfolio
