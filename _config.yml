@@ -1,10 +1,5 @@
 lsi: false
 safe: true
-<<<<<<< HEAD
-source: "https://github.com/TMeyrowski/tristanmeyrowski.com.git"
-#source: "/Users/tmeyrowski/Documents/workspace/tristanmeyrowski.com/"
-=======
->>>>>>> dev
 incremental: false
 highlighter: rouge
 gist:
