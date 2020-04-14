@@ -33,7 +33,14 @@ title: Tristan Meyrowski | Web Developer
 description: >
   I'm a Freelance Web Developer based in Lille, France. Take a look at my resume and my works. 
 #source: "https://github.com/TMeyrowski/tristanmeyrowski.com.git"
+author: Tristan Meyrowski
 source: "/Users/tmeyrowski/Documents/workspace/tristanmeyrowski.com/"
+url: "https://tristanmeyrowski.com"
+social:
+  name: Tristan Meyrowski
+  links:
+    - https://www.linkedin.com/in/tristan-meyrowski
+    - https://github.com/TMeyrowski
 
 readme_index:
   enabled:          false
