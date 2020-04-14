@@ -1,0 +1,34 @@
+- name: HTML
+  duration: 7 ans
+- name: CSS
+  duration: 7 ans
+- name: SASS
+  duration: 4 ans
+- name: PHP 
+  duration: 7 ans
+- name: CodeIgniter
+  duration: 4 ans
+- name: Lavarel
+  duration: 1 an
+- name: Wordpress
+  duration: 1 an
+- name: JavaScript
+  duration: 6 ans
+- name: Vue.js
+  duration: 1 an
+- name: jQuery
+  duration: 6 ans
+- name: jQuery UI
+  duration: 6 ans
+- name: OpenLayers
+  duration: 2 ans
+- name: Highcharts
+  duration: 3 ans
+- name: MariaDB
+  duration: 3 ans
+- name: MySQL
+  duration: 5 ans
+- name: PostgreSQL
+  duration: 2 ans
+- name: Oracle Database
+  duration: 4 ans

@@ -3,15 +3,15 @@
         <header>
             <nav class="navbar">
                 <span class="navbar-toggle" id="js-navbar-toggle">
-                  <i class="fas fa-bars"></i>
+                    <i class="fas fa-bars"></i>
                 </span>
                 <!-- <a href="#" class="logo">logo</a> -->
                 <ul>
-                  {% for item in site.data.navigation %}
-                    <li><a href="{{ item.link }}">{{ item.name }}</a></li>
-                  {% endfor %}
+                    {% for item in site.data.navigation %}
+                    <li><a href="{{ item.link }}" {% if item.name == "Blog" %} target="_blank" {% endif %}>{{ item.name }}</a></li>
+                    {% endfor %}
                 </ul>
-              </nav>
+            </nav>
         </header>
         {{ content }}
     </body>
