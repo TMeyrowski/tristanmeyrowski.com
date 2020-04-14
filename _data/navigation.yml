@@ -1,6 +1,11 @@
 - name: Home
   link: /
-- name: Curriculum Vitae
-  link: /#curriculum_vitae
+- name: Experience
+  link: /#experience
+- name: Education
+  link: /#education
 - name: Portfolio
   link: /#portfolio
+- name: Blog 
+  #link: "https://blog.tristanmeyrowski.com"
+  link: /blog
