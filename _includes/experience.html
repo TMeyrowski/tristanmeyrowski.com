@@ -1,12 +1,18 @@
-<section>
+<section class="tm-container">
     <h2 id="experience">Experience</h2>
     <article>
         <header>
             <h3>Freelance</h3>
             <span>April 2019 - Now</span>
         </header>
+        <div>
+            {% for item in site.data.skills_freelance %}
+            <p>{{ item.name }}</p>
+            {% endfor %}
+        </div>
         <p>Main missions:<br>
-            - Mock-ups and Web development for <a href="https://grow-your-business.fr/accueil" target="_blank" nofollow>Grow Your Business</a><br>
+            - Mock-ups and Web development for <a href="https://grow-your-business.fr/accueil" target="_blank"
+                nofollow>Grow Your Business</a><br>
             - Algorithmic trainer for <a href="https://arras.cesi.fr/" target="_blank" nofollow>CESI Alternance</a></p>
     </article>
     <article>
@@ -15,6 +21,11 @@
             <h4>Web Developer (work-study contract)</h4>
             <span>September 2015 - May 2019</span>
         </header>
+        <div>
+            {% for item in site.data.skills_enedis %}
+            <p>{{ item.name }}</p>
+            {% endfor %}
+        </div>
         <p>- Operational project management<br>
             - Drafting of specifications<br>
             - Making of mock-ups (Photoshop CC)<br>
@@ -28,6 +39,11 @@
             <h4>Web Developer (work-study contract)</h4>
             <span>September 2013 - June 2015</span>
         </header>
+        <div>
+            {% for item in site.data.skills_rollgom %}
+            <p>{{ item.name }}</p>
+            {% endfor %}
+        </div>
         <p>- Implementation of website (CMS)<br>
             - Implementation of intranet website (End of studies project)<br>
             - Web development (HTML5/CSS3/PHP5/JS)<br>

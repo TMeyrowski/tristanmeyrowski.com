@@ -1,3 +1,5 @@
 $base: #000000;
+$white: white;
 
-$mainColor: #2585C9;
+$primaryColor: #2585C9;
+$darkenPrimaryColor: darken($primaryColor, 15%);

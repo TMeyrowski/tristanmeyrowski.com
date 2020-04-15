@@ -1,11 +1,10 @@
 {% include head.html %}
     <body>
-        <header>
-            <nav class="navbar">
-                <span class="navbar-toggle" id="js-navbar-toggle">
+        <header class="tm-container-navbar">
+            <nav class="tm-navbar">
+                <span class="tm-navbar-toggle" id="js-navbar-toggle">
                     <i class="fas fa-bars"></i>
                 </span>
-                <!-- <a href="#" class="logo">logo</a> -->
                 <ul>
                     {% for item in site.data.navigation %}
                     <li><a href="{{ item.link }}" {% if item.name == "Blog" %} target="_blank" {% endif %}>{{ item.name }}</a></li>
