@@ -2,12 +2,17 @@
     font-family: "Nunito", sans-serif;
 }
 
+body {
+    margin: 0;
+}
+
 :root {
     font-size: 62.5%;
 }
 
 a {
     color: $primaryColor;
+    text-decoration: none;
     &:hover {
         text-decoration: none;
         color: $darkenPrimaryColor;
@@ -16,4 +21,27 @@ a {
 
 p {
     font-size: 1.6rem;
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+h2 {
+    font-size: 2.4rem;
+}
+h3 {
+    font-size: 2rem;
+}
+h4 {
+    font-size: 1.6rem;
+}
+h5 {
+    font-size: 1.4rem;
+}
+h6 {
+    font-size: 1.2rem;
+}
+
+.tm-link_disabled{
+    pointer-events: none;
 }
