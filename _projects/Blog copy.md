@@ -1,4 +1,5 @@
 ---
+sitemap: false
 permalink: /project/blog
 name: Blog
 description:  Description Description Description
