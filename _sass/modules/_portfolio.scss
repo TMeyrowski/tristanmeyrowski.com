@@ -80,7 +80,5 @@
 }
 
 #portfolio {
-    margin-top: 3rem;
-    font-size: 3.2rem;
-    text-align: center;
+    @extend %section-title;
 }
