@@ -4,12 +4,12 @@
 @import 'base/functions';
 @import 'base/mixins';
 
-@import 'modules/navbar';
-@import 'modules/skills';
-@import 'modules/introduction';
-@import 'modules/portfolio';
-@import 'modules/footer';
-
 @import 'layouts/header';
 @import 'layouts/section-home';
 @import 'layouts/404';
+
+@import 'modules/navbar';
+@import 'modules/introduction';
+@import 'modules/portfolio';
+@import 'modules/experience';
+@import 'modules/footer';

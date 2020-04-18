@@ -1,0 +1,122 @@
+%timeline {
+    position: absolute;
+    bottom: 0;
+}
+
+#exp-edu {
+    @extend %section-title;
+}
+
+.tm {
+    &-exp-edu {
+        &-list {
+            margin: 5rem 0;
+        }
+        &-item {
+            width: 100%;
+            padding-bottom: 5rem;
+            display: flex;
+            position: relative;
+            &:nth-child(even) {
+                justify-content: flex-end;
+                article {
+                    text-align: start;
+                    .tm-experience-item-skill {
+                        justify-content: flex-start;
+                        p {
+                            margin-right: 1rem;
+                        }
+                    }
+                }
+            }
+            &:nth-child(odd) {
+                justify-content: flex-start;
+                article {
+                    text-align: end;
+                    .tm-experience-item-skill {
+                        justify-content: flex-end;
+                        p {
+                            margin-left: 1rem;
+                        }
+                    }
+                }
+            }
+
+            &_timeline {
+                @extend %timeline;
+                left: calc(50% - 1.7rem);
+                top: -0.3rem;
+                &::before {
+                    border: 0.3rem solid transparent;
+                    border-radius: 100%;
+                    display: block;
+                    height: 2.5rem;
+                    position: absolute;
+                    width: 2.5rem;
+                    text-align: center;
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 900;
+                    color: $white;
+                }
+                &::after {
+                    content: "";
+                    width: 3px;
+                    background: #ccd5db;
+                    display: block;
+                    position: absolute;
+                    top: 3.8rem;
+                    bottom: 1rem;
+                    left: 1.3rem;
+                }
+                &__study {
+                    &::before {
+                        background: $accentColor;
+                        content: "\f19d";
+                    }
+                }
+                &__work {
+                    &::before {
+                        background: $primaryColor;
+                        content: "\f5fc";
+                    }
+                }
+                &__end {
+                    @extend %timeline;
+                    left: calc(50% - 1rem);
+                    &::before {
+                        display: block;
+                        position: absolute;
+                        content: "";
+                        width: 1.5rem;
+                        height: 0.3rem;
+                        background: #ccd5db;
+                        bottom: 0.7rem;
+                    }
+                }
+            }
+            article {
+                width: 45%;
+                position: relative;
+                ul {
+                    list-style: none;
+                }
+                h3,
+                h4 {
+                    margin-bottom: 1rem;
+                }
+                h4 {
+                    font-size: 1.8rem;
+                }
+                h5 {
+                    font-size: 1.6rem;
+                }
+            }
+            &_date {
+                font-size: 14px;
+                letter-spacing: 0.2rem;
+                display: inline-block;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}

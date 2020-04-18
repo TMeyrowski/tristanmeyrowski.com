@@ -1,9 +1,7 @@
 - name: Home
   link: /
-- name: Experience
-  link: /#experience
-- name: Education
-  link: /#education
+- name: Experience & Education
+  link: /#exp-edu
 - name: Portfolio
   link: /#portfolio
 #- name: Blog 

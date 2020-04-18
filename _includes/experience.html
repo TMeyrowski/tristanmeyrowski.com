@@ -1,54 +1,86 @@
-<section class="tm-container">
-    <h2 id="experience">Experience</h2>
-    <article>
-        <header>
-            <h3>Freelance</h3>
-            <span>April 2019 - Now</span>
-        </header>
-        <div>
-            {% for item in site.data.skills_freelance %}
-            <p>{{ item.name }}</p>
-            {% endfor %}
+<section>
+    <h2 id="exp-edu">Experience & Education</h2>
+    <div>
+        <div class="tm-exp-edu-list">
+            <div class="tm-exp-edu-item">
+                <span class="tm-exp-edu-item_timeline tm-exp-edu-item_timeline__study"></span>
+                <article>
+                    <span class="tm-exp-edu-item_date">October 2019 - March 2020</span>
+                    <h3><a href="https://www.isi-education.com/" target="_blank" nofollow>ISI Japanese Language
+                            School</a></h3>
+                    <p>Learning Japanese in Tokyo for one semester</p>
+                </article>
+            </div>
+            <div class="tm-exp-edu-item">
+                <span class="tm-exp-edu-item_timeline tm-exp-edu-item_timeline__work"></span>
+                <article>
+                    <span class="tm-exp-edu-item_date">April 2019 - Now</span>
+                    <h3>Freelance</h3>
+                    <h5>Main missions:</h5>
+                    <ul>
+                        <li>Mock-ups and Web development for <a href="https://grow-your-business.fr/accueil"
+                                target="_blank" nofollow>Grow Your Business</a></li>
+                        <li>Algorithmic trainer for <a href="https://arras.cesi.fr/" target="_blank" nofollow>CESI
+                                Alternance</a></li>
+                    </ul>
+                </article>
+            </div>
+            <div class="tm-exp-edu-item">
+                <span class="tm-exp-edu-item_timeline tm-exp-edu-item_timeline__study"></span>
+                <article>
+                    <span class="tm-exp-edu-item_date">October 2017 - March 2019</span>
+                    <h3><a href="https://arras.cesi.fr/" target="_blank" nofollow>CESI Alternance</a></h3>
+                    <h4>Master's Degree - IT Manager</h4>
+                </article>
+            </div>
+            <div class="tm-exp-edu-item">
+                <span class="tm-exp-edu-item_timeline tm-exp-edu-item_timeline__study"></span>
+                <article>
+                    <span class="tm-exp-edu-item_date">September 2015 - March 2017</span>
+                    <h3><a href="https://arras.cesi.fr/" target="_blank" nofollow>CESI Alternance</a></h3>
+                    <h4>Bachelor's Degree - Software engineering manager</h4>
+                </article>
+            </div>
+            <div class="tm-exp-edu-item">
+                <span class="tm-exp-edu-item_timeline tm-exp-edu-item_timeline__work"></span>
+                <article>
+                    <span class="tm-exp-edu-item_date">September 2015 - May 2019</span>
+                    <h3><a href="https://www.enedis.fr/" target="_blank" nofollow>Enedis</a></h3>
+                    <h4>Web Developer (work-study contract)</h4>
+                    <ul>
+                        <li>Operational project management</li>
+                        <li>Drafting of specifications</li>
+                        <li>Making of mock-ups</li>
+                        <li>Web application development</li>
+                        <li>Database Management</li>
+                        <li>Porting tools to operational teams</li>
+                    </ul>
+                </article>
+            </div>
+            <div class="tm-exp-edu-item">
+                <span class="tm-exp-edu-item_timeline tm-exp-edu-item_timeline__study"></span>
+                <article>
+                    <span class="tm-exp-edu-item_date">September 2013 - June 2015</span>
+                    <h3><a href="https://arras.cesi.fr/" target="_blank" nofollow>CESI Alternance</a></h3>
+                    <h4>Associate's Degree - Developer</h4>
+                </article>
+            </div>
+            <div class="tm-exp-edu-item">
+                <span class="tm-exp-edu-item_timeline tm-exp-edu-item_timeline__work"></span>
+                <article>
+                    <span class="tm-exp-edu-item_date">September 2013 - June 2015</span>
+                    <h3><a href="http://roll-gom.com/fr/" target="_blank" nofollow>Roll-Gom</a></h3>
+                    <h4>Web Developer (work-study contract)</h4>
+                    <ul>
+                        <li>Implementation of website</li>
+                        <li>Implementation of intranet website</li>
+                        <li>Web development</li>
+                        <li>Maintenance technician</li>
+                    </ul>
+                </article>
+                <span class="tm-exp-edu-item_timeline__end"></span>
+            </div>
         </div>
-        <p>Main missions:<br>
-            - Mock-ups and Web development for <a href="https://grow-your-business.fr/accueil" target="_blank"
-                nofollow>Grow Your Business</a><br>
-            - Algorithmic trainer for <a href="https://arras.cesi.fr/" target="_blank" nofollow>CESI Alternance</a></p>
-    </article>
-    <article>
-        <header>
-            <h3><a href="https://www.enedis.fr/" target="_blank" nofollow>Enedis</a></h3>
-            <h4>Web Developer (work-study contract)</h4>
-            <span>September 2015 - May 2019</span>
-        </header>
-        <div>
-            {% for item in site.data.skills_enedis %}
-            <p>{{ item.name }}</p>
-            {% endfor %}
-        </div>
-        <p>- Operational project management<br>
-            - Drafting of specifications<br>
-            - Making of mock-ups (Photoshop CC)<br>
-            - Web application development (HTML5/CSS3/SASS/PHP5/PHP7/JS)<br>
-            - Database Management (MySQL, MariaDB, PostgreSQL, Oracle)<br>
-            - Porting tools to operational teams</p>
-    </article>
-    <article>
-        <header>
-            <h3><a href="http://roll-gom.com/fr/" target="_blank" nofollow>Roll-Gom</a></h3>
-            <h4>Web Developer (work-study contract)</h4>
-            <span>September 2013 - June 2015</span>
-        </header>
-        <div>
-            {% for item in site.data.skills_rollgom %}
-            <p>{{ item.name }}</p>
-            {% endfor %}
-        </div>
-        <p>- Implementation of website (CMS)<br>
-            - Implementation of intranet website (End of studies project)<br>
-            - Web development (HTML5/CSS3/PHP5/JS)<br>
-            - Maintenance technician (help desk/servers)</p>
-    </article>
+    </div>
 </section>
-
 </a>
