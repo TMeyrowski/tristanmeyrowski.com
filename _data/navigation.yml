@@ -1,8 +1,8 @@
 - name: Home
   link: /
-- name: Experience & Education
-  link: /#exp-edu
 - name: Portfolio
   link: /#portfolio
+- name: Experience & Education
+  link: /#exp-edu
 #- name: Blog 
   #link: "https://blog.tristanmeyrowski.com"
