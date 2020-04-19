@@ -7,22 +7,15 @@
                 <i class="fas fa-bars"></i>
             </span>
             <ul>
-                {% if page.lang == "fr" %}
-                {% for item in site.data.navigation.fr %}
+                {% for item in site.data.navigation[page.lang] %}
                 <li><a href="{{ item.link }}" {% if item.name == "Blog" %} target="_blank" {% endif %}>{{ item.name }}</a>
                 </li>
                 {% endfor %}
-                {% else %}
-                {% for item in site.data.navigation.en %}
-                <li><a href="{{ item.link }}" {% if item.name == "Blog" %} target="_blank" {% endif %}>{{ item.name }}</a>
-                </li>
-                {% endfor %}
-                {% endif %}
             </ul>
         </nav>
     </header>
     {{ content }}
-    {% if page.lang == "fr" %}{% include axeptio_fr.html %}{% else %}{% include axeptio_en.html %}{% endif %}
+    {% include axeptio_{{page.lang}}.html %}
 </body>
 
 </html>
