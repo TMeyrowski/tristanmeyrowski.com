@@ -1,19 +1,7 @@
 {% include head_en.html %}
 
 <body>
-    <header class="tm-container-navbar">
-        <nav class="tm-navbar">
-            <span class="tm-navbar-toggle" id="js-navbar-toggle">
-                <i class="fas fa-bars"></i>
-            </span>
-            <ul>
-                {% for item in site.data.navigation[page.lang] %}
-                <li><a href="{{ item.link }}" {% if item.name == "Blog" %} target="_blank" {% endif %}>{{ item.name }}</a>
-                </li>
-                {% endfor %}
-            </ul>
-        </nav>
-    </header>
+    {% include navigation.html %}
     {{ content }}
     {% include axeptio_{{page.lang}}.html %}
 </body>

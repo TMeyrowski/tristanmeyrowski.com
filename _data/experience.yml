@@ -1,0 +1,93 @@
+h2:
+  en: "Experience & Education"
+  fr: "Expérience & Formation"
+
+list:
+  isi:
+    date:
+      en: "October 2019 - March 2020"
+      fr: "Octobre 2019 - Mars 2020"
+    description:
+      en: "Learning Japanese in Tokyo for one semester"
+      fr: "Apprentissage de la langue Japonaise à Tokyo pendant un semestre"
+  freelance:
+    date:
+      en: "April 2019 - Now"
+      fr: "Avril 2019 - Maintenant"
+    subtitle:
+      en: "Main missions:"
+      fr: "Missions principales:"
+    description:
+      one:
+        en: "Mock-ups and Web development for "
+        fr: "Maquettes et développement web pour "
+      two:
+        en: "Algorithmic trainer for "
+        fr: "Formateur en Algorithmique pour le "
+  msi:
+    date:
+      en: "October 2017 - March 2019"
+      fr: "Octobre 2017 - Mars 2019"
+    title:
+      en: "Master's Degree - IT Manager"
+      fr: "Manager en systèmes d'information - Titre RNCP de niveau 7"
+  ril:
+    date: 
+      en: "September 2015 - May 2017"
+      fr: "Septembre 2015 - Mai 2017"
+    title:
+      en: "Bachelor's Degree - Software engineering manager"
+      fr: "Responsable en Ingénierie des Logiciels - Titre RNCP de niveau 6"
+  enedis:
+    date:
+      en: "September 2015 - May 2019"
+      fr: "Septembre 2015 - Mai 2019"
+    job:
+      en: "Web Developer (work-study contract)"
+      fr: "Développeur web (Contrat de professionnalisation)"
+    description:
+      one:
+        en: "Operational project management"
+        fr: "Conduite de projet opérationnel applicatif"
+      two:
+        en: "Drafting of specifications"
+        fr: "Conception et Réalisation de cahiers des charges"
+      three:
+        en: "Making of mock-ups"
+        fr: "Réalisation de maquettes"
+      four:
+        en: "Web application development"
+        fr: "Développement d'applications web"
+      five:
+        en: "Database Management"
+        fr: "Gestion de bases de données"
+      six:
+        en: "Porting tools to operational teams"
+        fr: "Portage et mise en main des outils auprès des équipes opérationnelles"
+  di:
+    date:
+      en: "September 2013 - June 2015"
+      fr: "Septembre 2013 - Juin 2015"
+    title:
+      en: "Associate's Degree - Developer"
+      fr: "Développeur Informatique - Titre RNCP de niveau 5"
+  rollgom:
+    date:
+      en: "September 2013 - June 2015"
+      fr: "Septembre 2013 - Juin 2015"
+    job:
+      en: "Web Developer (work-study contract)"
+      fr: "Développeur web (Contrat de professionnalisation)"
+    description:
+      one:
+        en: "Implementation of website"
+        fr: "Mise en place d'un site internet"
+      two:
+        en: "Implementation of intranet website"
+        fr: "Analyse/Conception de l'intranet"
+      three:
+        en: "Web development"
+        fr: "Développements Web"
+      four:
+        en: "Maintenance technician"
+        fr: "Technicien de maintenance"

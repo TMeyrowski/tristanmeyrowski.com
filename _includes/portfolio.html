@@ -1,6 +1,6 @@
 <section>
     <div class="tm-portfolio">
-        <h2 id="portfolio">Portfolio</h2>
+        <h2 id="portfolio">{{site.data.portfolio.h2[page.lang]}}</h2>
         <div class="tm-portfolio-list">
             {% for project in site.projects %}
             <div class="tm-portfolio-list_item">
@@ -8,11 +8,11 @@
                     <img class="tm-portfolio-img" src="{{ project.image }}" alt="{{ project.image-alt }}">
                     <figcaption class="tm-portfolio-figcaption">
                         <h2>{{ project.name }}</h2>
-                        <p>{{ project.description }}</p>
+                        <p>{{ project.description[page.lang] }}</p>
                         {% if project.state == "project" %}
-                        <a href="{{ project.permalink }}">Visit<span><i class="fas fa-chevron-right"></i></span></a>
+                        <a href="{{ project.permalink }}">{{site.data.portfolio.visit[page.lang]}}<span><i class="fas fa-chevron-right"></i></span></a>
                         {% else %}
-                        <a href="{{ project.permalink }}" class="tm-link_disabled">In development</a>
+                        <a href="{{ project.permalink }}" class="tm-link_disabled">{{site.data.portfolio.state[page.lang]}}</a>
                         {% endif %}
                     </figcaption>
                 </figure>
