@@ -11,7 +11,7 @@ kramdown:
 source: .
 url: "https://tristanmeyrowski.com"
 baseurl : ""
-repository: "/TMeyrowski/tristanmeyrowski.com"
+repository: "TMeyrowski/tristanmeyrowski.com"
 
 title: Tristan Meyrowski | Web Developer 
 description: >
@@ -26,13 +26,6 @@ social:
 sass:
     sass_dir: _sass
     style: compressed
-
-defaults:
-  - scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "project"
 
 collections:
   projects:

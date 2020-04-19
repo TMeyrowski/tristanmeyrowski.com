@@ -1,17 +1,22 @@
-{% include head.html %}
-    <body>
-        <header class="tm-container-navbar">
-            <nav class="tm-navbar">
-                <span class="tm-navbar-toggle" id="js-navbar-toggle">
-                    <i class="fas fa-bars"></i>
-                </span>
-                <ul>
-                    {% for item in site.data.navigation %}
-                    <li><a href="{{ item.link }}" {% if item.name == "Blog" %} target="_blank" {% endif %}>{{ item.name }}</a></li>
-                    {% endfor %}
-                </ul>
-            </nav>
-        </header>
-        {{ content }}
-    </body>
+{% include head_en.html %}
+
+<body>
+    <header class="tm-container-navbar">
+        <nav class="tm-navbar">
+            <span class="tm-navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </span>
+            <ul>
+                {% for item in site.data.navigation %}
+                <li><a href="{{ item.link }}" {% if item.name == "Blog" %} target="_blank"
+                        {% endif %}>{% if page.lang == "fr" %}{{ item.name.fr }}{% else %}{{ item.name.en }}{% endif %}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </header>
+    {{ content }}
+    {% if page.lang == "fr" %}{% include axeptio_fr.html %}{% else %}{% endif %}
+</body>
+
 </html>

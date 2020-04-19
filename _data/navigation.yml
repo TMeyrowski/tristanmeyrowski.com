@@ -1,8 +1,14 @@
-- name: Home
+- name: 
+    en: Home
+    fr: Accueil
   link: /
-- name: Portfolio
+- name: 
+    en: Portfolio
+    fr: Portfolio
   link: /#portfolio
-- name: Experience & Education
+- name: 
+    en: Experience & Education
+    fr: Expérience & Formation
   link: /#exp-edu
 #- name: Blog 
   #link: "https://blog.tristanmeyrowski.com"
