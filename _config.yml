@@ -13,16 +13,6 @@ url: "https://tristanmeyrowski.com"
 baseurl : ""
 repository: "TMeyrowski/tristanmeyrowski.com"
 
-title: Tristan Meyrowski | Web Developer 
-description: >
-  I'm a Freelance Web Developer based in Lille, France. Take a look at my resume and my works. 
-author: Tristan Meyrowski
-social:
-  name: Tristan Meyrowski
-  links:
-    - https://www.linkedin.com/in/tristan-meyrowski
-    - https://github.com/TMeyrowski
-
 sass:
     sass_dir: _sass
     style: compressed
@@ -33,7 +23,6 @@ collections:
 
 plugins:
   - jekyll-sitemap
-  - jekyll-seo-tag
 
 readme_index:
   enabled:          false
