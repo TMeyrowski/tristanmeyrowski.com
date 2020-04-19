@@ -16,9 +16,9 @@
     <script type="text/javascript">
         var userLang = navigator.language || navigator.userLanguage;
         if (userLang == "fr-FR" && window.location.pathname != "/fr") {
-            window.location.replace("http://localhost:4000/fr");
+            window.location.replace("{{ site.url }}/fr");
         } else {
-            window.location.replace("http://localhost:4000/en");
+            window.location.replace("{{ site.url }}/en");
         }
     </script>
 </head>
