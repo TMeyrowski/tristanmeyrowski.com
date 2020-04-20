@@ -8,6 +8,19 @@
             <li><a href="{{ item.link }}" {% if item.name == "Blog" %} target="_blank" {% endif %}>{{ item.name }}</a>
             </li>
             {% endfor %}
+            <li class="tm-navbar-lang">
+                {% if page.lang == "fr" %}
+                <button id="tm-button-lang" class="tm-navbar-lang_button" aria-expanded="false"><img class="tm-navbar-lang_item" src="/assets/images/fr.svg" alt="Fr"></button>
+                <div id="tm-button-lang_hidden" class="tm-navbar-lang_hidden">
+                    <a href="{{ site.url }}/en"><img class="tm-navbar-lang_hidden__item" src="/assets/images/en.svg" alt="en"></a>
+                </div>
+                {% else %}
+                <button id="tm-button-lang" class="tm-navbar-lang_button" aria-expanded="false"><img class="tm-navbar-lang_item" src="/assets/images/en.svg" alt="En"></button>
+                <div id="tm-button-lang_hidden" class="tm-navbar-lang_hidden">
+                    <a href="{{ site.url }}/fr"><img class="tm-navbar-lang_hidden__item" src="/assets/images/fr.svg" alt="fr"></a>
+                </div>
+                {% endif %}
+            </li>
         </ul>
     </nav>
 </header>
