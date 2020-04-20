@@ -7,6 +7,65 @@
     @extend %section-title;
 }
 
+@media screen and (max-width: 768px) {
+    .tm {
+        &-exp-edu {
+            &-item {
+                &:nth-child(odd) {
+                    justify-content: flex-end;
+                    article {
+                        text-align: start;
+                        .tm-experience-item-skill {
+                            justify-content: flex-start;
+                            p {
+                                margin-right: 1rem;
+                            }
+                        }
+                    }
+                }
+                &_timeline {
+                    left: 4%;
+                    &__end {
+                        display: none;
+                    }
+                }
+                article {
+                    width: 85%;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 769px) {
+    .tm {
+        &-exp-edu {
+            &-item {
+                &:nth-child(odd) {
+                    justify-content: flex-start;
+                    article {
+                        text-align: end;
+                        .tm-experience-item-skill {
+                            justify-content: flex-end;
+                            p {
+                                margin-left: 1rem;
+                            }
+                        }
+                    }
+                }
+                &_timeline {
+                    left: calc(50% - 1.7rem);
+                    &__end {
+                        left: calc(50% - 1rem);
+                    }
+                }
+                article {
+                    width: 45%;
+                }
+            }
+        }
+    }
+}
+
 .tm {
     &-exp-edu {
         &-list {
@@ -29,22 +88,8 @@
                     }
                 }
             }
-            &:nth-child(odd) {
-                justify-content: flex-start;
-                article {
-                    text-align: end;
-                    .tm-experience-item-skill {
-                        justify-content: flex-end;
-                        p {
-                            margin-left: 1rem;
-                        }
-                    }
-                }
-            }
-
             &_timeline {
                 @extend %timeline;
-                left: calc(50% - 1.7rem);
                 top: -0.3rem;
                 &::before {
                     border: 0.3rem solid transparent;
@@ -82,7 +127,6 @@
                 }
                 &__end {
                     @extend %timeline;
-                    left: calc(50% - 1rem);
                     &::before {
                         display: block;
                         position: absolute;
@@ -95,7 +139,6 @@
                 }
             }
             article {
-                width: 45%;
                 position: relative;
                 ul {
                     list-style: none;

@@ -1,3 +1,37 @@
+@media screen and (max-width: 768px) {
+    .tm {
+        &-portfolio {
+            &-list {
+                &_item {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 769px) {
+    .tm {
+        &-portfolio {
+            &-list {
+                &_item {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1024px) {
+    .tm {
+        &-portfolio {
+            &-list {
+                &_item {
+                    width: 33.3333%;
+                }
+            }
+        }
+    }
+}
+
 .tm {
     &-portfolio {
         margin: 0 auto;
@@ -9,7 +43,7 @@
             &_item {
                 -webkit-box-flex: 0;
                 flex: none;
-                width: 33.3333%;
+                //width: 33.3333%;
                 padding: 1.5rem;
             }
         }
@@ -18,7 +52,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 26rem;
             margin: 0;
             @include border-radius(1.5rem);
             overflow: hidden;
@@ -65,13 +98,13 @@
                 font-weight: 300;
                 display: flex;
                 border: 2px solid $white;
-                span i{
+                span i {
                     align-self: center;
                     margin-left: 1rem;
                 }
                 &:hover {
-                    border: 2px solid #2585C9;
-                    background: #2585C9;
+                    border: 2px solid #2585c9;
+                    background: #2585c9;
                     @include transition(0.35s, ease-in-out);
                 }
             }

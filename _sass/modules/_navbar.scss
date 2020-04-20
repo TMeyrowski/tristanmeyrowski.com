@@ -25,7 +25,7 @@
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
     .tm {
         &-navbar {
             display: flex;
@@ -61,7 +61,7 @@
                     height: 100%;
                     padding: 0;
                     background: transparent;
-                    &:focus{
+                    &:focus {
                         outline: none;
                     }
                 }
