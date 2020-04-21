@@ -1,13 +1,27 @@
 var callback = function () {
-    var button = document.getElementById("tm-button-lang");
-    button.addEventListener("click", () => {
-        var div = document.getElementById("tm-button-lang_hidden");
-        if (div.style.display === "block") {
-            button.setAttribute('aria-expanded', false);
-            div.style.display = "none";
+    var buttonLang = document.getElementById("tm-button-lang");
+    buttonLang.addEventListener("click", () => {
+        var divLang = document.getElementById("tm-button-lang_hidden");
+        if (divLang.style.display === "block") {
+            buttonLang.setAttribute('aria-expanded', false);
+            divLang.style.display = "none";
         } else {
-            button.setAttribute('aria-expanded', true);
-            div.style.display = "block";
+            buttonLang.setAttribute('aria-expanded', true);
+            divLang.style.display = "block";
+        }
+    });
+
+    var burgerMenu = document.getElementById("tm-navbar-burger");
+    burgerMenu.addEventListener("click", () => {
+        var divMenu = document.getElementById("tm-navbar-menu");
+        if (divMenu.style.display === "block") {
+            burgerMenu.classList.remove("tm-navbar-burger_active");
+            burgerMenu.setAttribute('aria-expanded', false);
+            divMenu.style.display = "none";
+        } else {
+            burgerMenu.classList.add("tm-navbar-burger_active");
+            burgerMenu.setAttribute('aria-expanded', true);
+            divMenu.style.display = "block";
         }
     });
 };
