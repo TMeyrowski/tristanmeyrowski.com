@@ -28,6 +28,7 @@
             }
         }
         &-menu {
+            margin-bottom: 2rem;
             li {
                 padding: 0.8rem;
             }
@@ -125,6 +126,9 @@
                 flex-direction: row;
                 justify-content: space-evenly;
                 width: 50rem;
+            }
+            &-menu {
+                margin-bottom: 0;
             }
             &-burger {
                 display: none;
