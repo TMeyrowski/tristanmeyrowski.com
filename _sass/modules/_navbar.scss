@@ -4,6 +4,8 @@
 
 .tm {
     &-navbar {
+        z-index: 2;
+        background: lightgray;
         display: block;
         &-top {
             height: 8rem;
