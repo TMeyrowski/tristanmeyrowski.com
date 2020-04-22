@@ -61,6 +61,7 @@
                 }
                 article {
                     width: 45%;
+                    padding: 0 3%;
                 }
             }
         }
@@ -116,7 +117,7 @@
                 }
                 &__study {
                     &::before {
-                        background: $accentColor;
+                        background: $studyColor;
                         content: "\f19d";
                     }
                 }
@@ -124,6 +125,12 @@
                     &::before {
                         background: $primaryColor;
                         content: "\f5fc";
+                    }
+                }
+                &__award {
+                    &::before {
+                        background: $awardColor;
+                        content: "\f559";
                     }
                 }
                 &__end {

@@ -31,6 +31,13 @@ list:
     title:
       en: "Master's Degree - IT Manager"
       fr: "Manager en systèmes d'information - Titre RNCP de niveau 7"
+  toiec: 
+    date: 
+      en: "June 2017"
+      fr: "Juin 2017"
+    validity: 
+      en: "Valid until June 2019"
+      fr: "Valide jusqu'en Juin 2019"
   ril:
     date: 
       en: "September 2015 - May 2017"
