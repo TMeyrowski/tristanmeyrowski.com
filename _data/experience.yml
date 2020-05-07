@@ -1,8 +1,28 @@
 h2:
-  en: "Experience & Education"
-  fr: "Expérience & Formation"
+  en: "Career"
+  fr: "Parcours"
 
 list:
+  blog:
+    date:
+      en: "May 2020"
+      fr: "Mai 2020"
+    description:
+      en: "Launch of my personal blog on which you'll find articles on subjects that are close to my heart"
+      fr: "Lancement de mon blog personnel sur lequel vous trouverez des articles sur des sujets qui me tiennent à cœur"
+    thumbnail:
+      en: "/assets/images/coming-soon.png"
+      fr: "/assets/images/coming-soon.png"
+    thumbnail-alt: 
+      en: "Blog thumbnail"
+      fr: "Vignette du blog"
+  portfolio:
+    date:
+      en: "April 2020"
+      fr: "Avril 2020"
+    description:
+      en: "Launch of my personal website"
+      fr: "Lancement de mon site personnel"
   isi:
     date:
       en: "October 2019 - March 2020"
@@ -10,20 +30,20 @@ list:
     description:
       en: "Learning Japanese in Tokyo for one semester"
       fr: "Apprentissage de la langue Japonaise à Tokyo pendant un semestre"
-  freelance:
+  gyb:
     date:
-      en: "April 2019 - Now"
-      fr: "Avril 2019 - Maintenant"
-    subtitle:
-      en: "Main missions:"
-      fr: "Missions principales:"
+      en: "April 2019 - July 2019"
+      fr: "Avril 2019 - Juillet 2019"
     description:
-      one:
-        en: "Mock-ups and Web development for "
-        fr: "Maquettes et développement web pour "
-      two:
-        en: "Algorithmic trainer for "
-        fr: "Formateur en Algorithmique pour le "
+      en: "Mock-ups and Web development"
+      fr: "Maquettes et développement web"
+  cesi1904:
+    date:
+      en: "April 2019"
+      fr: "Avril 2019"
+    description:
+      en: "Algorithmic trainer"
+      fr: "Formateur en Algorithmique"
   msi:
     date:
       en: "October 2017 - March 2019"

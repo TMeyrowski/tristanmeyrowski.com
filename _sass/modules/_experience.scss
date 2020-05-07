@@ -10,6 +10,9 @@
 @media screen and (max-width: 768px) {
     .tm {
         &-exp-edu {
+            &-example {
+                justify-content: flex-start;
+            }
             &-item {
                 &:nth-child(odd) {
                     justify-content: flex-end;
@@ -52,6 +55,14 @@
                             }
                         }
                     }
+                    .tm-exp-edu-example {
+                        justify-content: flex-end;
+                    }
+                }
+                &:nth-child(even) {
+                    .tm-exp-edu-example {
+                        justify-content: flex-start;
+                    }
                 }
                 &_timeline {
                     left: calc(50% - 1.7rem);
@@ -68,8 +79,50 @@
     }
 }
 
+@media screen and (min-width: 1024px) {
+    .tm {
+        &-exp-edu {
+            &-item {
+                &:nth-child(odd) {
+                    .tm-exp-edu-description {
+                        padding-left: 20%;
+                    }
+                }
+                &:nth-child(even) {
+                    .tm-exp-edu-description {
+                        padding-right: 20%;
+                    }
+                }
+            }
+            &-example {
+                &-figure {
+                    max-width: 80%;
+                }
+            }
+        }
+    }
+}
+
 .tm {
     &-exp-edu {
+        &-example {
+            display: flex;
+            &-figure {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                @include border-radius(1.5rem);
+                overflow: hidden;
+            }
+            &-img {
+                max-width: 100%;
+                width: auto;
+                height: auto;
+                justify-content: center;
+            }
+        }
         &-list {
             margin: 5rem 0;
         }
@@ -121,10 +174,16 @@
                         content: "\f19d";
                     }
                 }
+                &__project {
+                    &::before {
+                        background: $projectColor;
+                        content: "\f5fc";
+                    }
+                }
                 &__work {
                     &::before {
                         background: $primaryColor;
-                        content: "\f5fc";
+                        content: "\f0b1";
                     }
                 }
                 &__award {
