@@ -55,6 +55,9 @@ list:
     date: 
       en: "June 2017"
       fr: "Juin 2017"
+    score: 
+      en: "Score: 795/990"
+      fr: "Score: 795/990"
     validity: 
       en: "Valid until June 2019"
       fr: "Valide jusqu'en Juin 2019"
