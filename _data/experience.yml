@@ -7,6 +7,9 @@ list:
     date:
       en: "May 2020"
       fr: "Mai 2020"
+    status: 
+      en: " (In development)"
+      fr: " (En développement)"
     description:
       en: "Launch of my personal blog on which you'll find articles on subjects that are close to my heart"
       fr: "Lancement de mon blog personnel sur lequel vous trouverez des articles sur des sujets qui me tiennent à cœur"
