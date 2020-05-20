@@ -154,7 +154,7 @@
                     position: absolute;
                     width: 2.5rem;
                     text-align: center;
-                    font-family: "Font Awesome 5 Free";
+                    font-family: "tm-icon";
                     font-weight: 900;
                     color: $white;
                 }
@@ -171,25 +171,25 @@
                 &__study {
                     &::before {
                         background: $studyColor;
-                        content: "\f19d";
+                        content: "\E825";
                     }
                 }
                 &__project {
                     &::before {
                         background: $projectColor;
-                        content: "\f5fc";
+                        content: "\E803";
                     }
                 }
                 &__work {
                     &::before {
                         background: $primaryColor;
-                        content: "\f0b1";
+                        content: "\E82C";
                     }
                 }
                 &__award {
                     &::before {
                         background: $awardColor;
-                        content: "\f559";
+                        content: "\E800";
                     }
                 }
                 &__end {

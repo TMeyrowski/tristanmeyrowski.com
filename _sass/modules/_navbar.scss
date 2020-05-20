@@ -5,6 +5,10 @@
 .tm {
     &-navbar {
         display: block;
+        &-logo{
+            height: 5rem;
+            margin-left: 3rem;
+        }
         &-top {
             height: 8rem;
             display: flex;
@@ -114,13 +118,15 @@
     #tm-navbar-menu {
         display: flex;
     }
-
     .tm {
         &-navbar {
             height: 10rem;
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
             align-items: center;
+            &-logo {
+                margin: 0;
+            }
             ul {
                 display: flex;
                 flex-direction: row;
