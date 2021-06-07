@@ -8,4 +8,12 @@ _site/
 .bundle/
 vendor/
 
+### macOS ###
+# General
 .DS_Store
+
+# Thumbnails
+._*
+
+### PhpStorm ###
+.idea/
