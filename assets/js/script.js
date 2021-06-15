@@ -1,36 +1,36 @@
-var callback = function () {
-    var buttonLang = document.getElementById("tm-button-lang");
-    buttonLang.addEventListener("click", () => {
-        var divLang = document.getElementById("tm-button-lang_hidden");
-        if (divLang.style.display === "block") {
-            buttonLang.setAttribute('aria-expanded', false);
-            divLang.style.display = "none";
-        } else {
-            buttonLang.setAttribute('aria-expanded', true);
-            divLang.style.display = "block";
-        }
+  // Preloader js    
+  $(window).on('load', function () {
+    $('.preloader').fadeOut(100);
+  });
+
+  (function ($) {
+    'use strict';
+
+    //  Search Form Open
+    $('#searchOpen').on('click', function () {
+      $('.search-wrapper').addClass('open');
+    });
+    $('#searchClose').on('click', function () {
+      $('.search-wrapper').removeClass('open');
     });
 
-    var burgerMenu = document.getElementById("tm-navbar-burger");
-    burgerMenu.addEventListener("click", () => {
-        var divMenu = document.getElementById("tm-navbar-menu");
-        if (divMenu.style.display === "block") {
-            burgerMenu.classList.remove("tm-navbar-burger_active");
-            burgerMenu.setAttribute('aria-expanded', false);
-            divMenu.style.display = "none";
-        } else {
-            burgerMenu.classList.add("tm-navbar-burger_active");
-            burgerMenu.setAttribute('aria-expanded', true);
-            divMenu.style.display = "block";
+    // featured post slider
+    $('.featured-post-slider').slick({
+      infinite: true,
+      vertical: true,
+      verticalSwiping: true,
+      arrows: false,
+      dots: true,
+      responsive: [{
+        breakpoint: 600,
+        settings: {
+          vertical: false,
+          verticalSwiping: false,
         }
+      }]
     });
-};
 
-if (
-    document.readyState === "complete" ||
-    (document.readyState !== "loading" && !document.documentElement.doScroll)
-) {
-    callback();
-} else {
-    document.addEventListener("DOMContentLoaded", callback);
-}
+    // venobox initialize
+    $('.venobox').venobox();
+
+  })(jQuery);
