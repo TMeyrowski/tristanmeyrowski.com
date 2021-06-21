@@ -1,140 +1,114 @@
 ######################## default configuration ####################
-baseURL = "https://examplesite.com"
-languageCode = "en-us"
-title = "Liva | Personal blog template"
+baseURL = "https://tristanmeyrowski.com/"
 summaryLength = "10"
 paginate = 6
-disqusShortname = ""
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
-############################# Plugins ##############################
-[params.plugins]
+######################## Languages ####################
+defaultContentLanguage = "fr"
 
-  # CSS Plugins
-  [[params.plugins.css]]
-  URL = "plugins/bootstrap/bootstrap.min.css"
-  [[params.plugins.css]]
-  URL = "plugins/slick/slick.css"
-  [[params.plugins.css]]
-  URL = "plugins/themify-icons/themify-icons.css"
-  [[params.plugins.css]]
-  URL = "plugins/venobox/venobox.css"
+[languages]
+    [languages.fr]
+        title = "Blog en Vf"
+        description = "C'est ici pour la meta description"
+        weight = 1
+        contentDir = "content/fr"
+        [languages.fr.menu]
 
-  # JS Plugins
-  [[params.plugins.js]]
-  URL = "plugins/jQuery/jquery.min.js"
-  [[params.plugins.js]]
-  URL = "plugins/bootstrap/bootstrap.min.js"
-  [[params.plugins.js]]
-  URL = "plugins/slick/slick.min.js"
-  [[params.plugins.js]]
-  URL = "plugins/venobox/venobox.min.js"
-  [[params.plugins.js]]
-  URL = "plugins/search/fuse.min.js"
-  [[params.plugins.js]]
-  URL = "plugins/search/mark.js"
-  [[params.plugins.js]]
-  URL = "plugins/search/search.js"
+            [[languages.fr.menu.main]]
+                name = "A propos"
+                url = "/"
+                weight = 1
 
+            [[languages.fr.menu.main]]
+                name = "Blog"
+                url = "blog"
+                weight = 2
 
-############################## navigation ###############################
-[menu]
+    [languages.en]
+        title = "My blog"
+        description = "This is meta description"
+        weight = 2
+        contentDir = "content/en"
+        [languages.en.menu]
 
-  # main menu
-  [[menu.main]]
-  name = "About"
-  URL = "about"
-  weight = 1
+            [[languages.en.menu.main]]
+                name = "About"
+                url = "/"
+                weight = 1
 
-  [[menu.main]]
-  name = "Post"
-  URL = "blog"
-  weight = 2
+            [[languages.en.menu.main]]
+                  name = "Blog"
+                  url = "blog"
+                  weight = 2
 
-  [[menu.main]]
-  name = "Contact"
-  URL = "contact"
-  weight = 3
-
-  # footer menu
-  [[menu.footer]]
-  name = "About"
-  URL = "about"
-  weight = 1
-
-  [[menu.footer]]
-  name = "Post"
-  URL = "blog"
-  weight = 2
-
-  [[menu.footer]]
-  name = "Contact"
-  URL = "contact"
-  weight = 3
-
-
-#################### default parameters ################################
+############################# Params ##############################
 [params]
 logo = "images/logo.png"
-home = "Home"
-# Meta data
-description = "This is meta description"
-author = "Themefisher"
+author = "Tristan Meyrowski"
 # Google Analitycs
-googleAnalitycsID = "Your ID"
-# Contact Information
-mobile = "0124857985320"
-email = "demo@email.com"
-location = "Dhaka, Bangladedsh"
+#googleAnalyticsID = "Your ID"
 # copyright
-copyright = "| copyright &copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved |"
+#copyright = "| copyright &copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved |"
+    # search
+    [params.search]
+    enable = true
 
-  # Preloader
-  [params.preloader]
-  enable = true
-  preloader = "" # use .png , .svg or .gif format
+    # cookies
+    [params.cookies]
+    enable = false
+    expire_days = 2
 
-  # search
-  [params.search]
-  enable = true
+    # social
+    [[params.social]]
+    title = "github"
+    icon = "ti-github"
+    link = "#github"
 
-############################ news letter ########################
-[params.newsletter]
-enable = true
-title = "Join Our Newsletter"
-content = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero"
+    [[params.social]]
+    title = "linkedin"
+    icon = "ti-linkedin"
+    link = "#linkedin"
+
+    [[params.social]]
+    title = "facebook"
+    icon = "ti-facebook"
+    link = "#facebook"
+
+    [[params.social]]
+    title = "twitter"
+    icon = "ti-twitter-alt"
+    link = "#twitter"
+
+    # plugins
+    [params.plugins]
+
+        # CSS Plugins
+        [[params.plugins.css]]
+        URL = "plugins/bootstrap/bootstrap.min.css"
+        [[params.plugins.css]]
+        URL = "plugins/slick/slick.css"
+        [[params.plugins.css]]
+        URL = "plugins/themify-icons/themify-icons.css"
+
+        # JS Plugins
+        [[params.plugins.js]]
+        URL = "plugins/jQuery/jquery.min.js"
+        [[params.plugins.js]]
+        URL = "plugins/bootstrap/bootstrap.min.js"
+        [[params.plugins.js]]
+        URL = "plugins/slick/slick.min.js"
+        [[params.plugins.js]]
+        URL = "plugins/venobox/venobox.min.js"
+        [[params.plugins.js]]
+        URL = "plugins/search/fuse.min.js"
+        [[params.plugins.js]]
+        URL = "plugins/search/mark.js"
+        [[params.plugins.js]]
+        URL = "plugins/search/search.js"
 
 
-# cookies
-[params.cookies]
-enable = true
-expire_days = 2
 
 
-############################# social site ########################
-[[params.social]]
-title = "facebook"
-icon = "ti-facebook" # themify icon : https://themify.me/themify-icons
-link = "#"
-
-[[params.social]]
-title = "twitter"
-icon = "ti-twitter-alt" # themify icon : https://themify.me/themify-icons
-link = "#"
-
-[[params.social]]
-title = "instagram"
-icon = "ti-instagram" # themify icon : https://themify.me/themify-icons
-link = "#"
-
-[[params.social]]
-title = "github"
-icon = "ti-github" # themify icon : https://themify.me/themify-icons
-link = "#"
-
-[[params.social]]
-title = "linkedin"
-icon = "ti-linkedin" # themify icon : https://themify.me/themify-icons
-link = "#"

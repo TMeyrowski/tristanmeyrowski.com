@@ -4,23 +4,23 @@ date: 2019-10-29T10:07:47+06:00
 draft: false
 
 # post thumb
-image: "images/post/post-3.jpg"
+image: "images/featured-post/post-2.jpg"
 
 # meta description
 description: "this is meta description"
 
 # taxonomies
 categories: 
-  - "HTML"
+  - "HTML & CSS"
 tags:
   - "Photos"
   - "Game"
-  - "HTML"
+  - "React"
   - "Python"
   - "New"
 
 # post type
-type: "post"
+type: "featured"
 ---
 
 # Heading 1
@@ -82,6 +82,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime 
 3. List item
 4. List item
 5. List item
+
 
 ##### Unordered List
 
